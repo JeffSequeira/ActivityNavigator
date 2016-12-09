@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_activity"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jeff.myapp.ToastActivity">
+
+    <Button
+        android:onClick="Toast"
+        android:text="TL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTL"
+        android:layout_row="1"
+        android:layout_weight="1" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="TC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTC"
+
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="TR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTR"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="CL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnCL" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="CR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnCR" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="BL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnBL" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="BR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnBC"
+        android:layout_alignLeft="@+id/btnCR"
+        android:layout_alignStart="@+id/btnCR"
+        android:id="@+id/btnBR" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="BC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnCC"
+        android:layout_alignStart="@+id/btnCC" />
+
+    <Button
+        android:onClick="Toast"
+        android:text="CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCC"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnTC"
+        android:layout_alignStart="@+id/btnTC" />
+
+</RelativeLayout>

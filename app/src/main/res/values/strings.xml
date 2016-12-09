@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="rbBest">Best case</string>
+    <string name="rbAvg">Average case</string>
+    <string name="rbWorst">Worst case</string>
+    <string name="title_activity_massage">MassageActivity</string>
+    <string name="title_activity_vibrator">VibratorActivity</string>
+    <string name="title_activity_google_news">GoogleNewsActivity</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
+

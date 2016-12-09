@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jeff.myapp.AnimationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This App does"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:id="@+id/textView2"
+        android:textColor="#ff3eff0f"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom"
+        android:id="@+id/btnZoom"
+        android:layout_below="@+id/ivLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:onClick="Animation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clockwise"
+        android:id="@+id/btnClockwise"
+        android:layout_alignTop="@+id/btnZoom"
+        android:layout_centerHorizontal="true"
+        android:onClick="Animation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fade"
+        android:id="@+id/btnFade"
+        android:layout_alignTop="@+id/btnClockwise"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Animation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blink"
+        android:id="@+id/btnBlink"
+        android:layout_below="@+id/btnZoom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Animation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide left"
+        android:id="@+id/btnSlideLeft"
+        android:layout_below="@+id/btnClockwise"
+        android:layout_alignRight="@+id/btnClockwise"
+        android:layout_alignEnd="@+id/btnClockwise"
+        android:layout_alignLeft="@+id/btnClockwise"
+        android:layout_alignStart="@+id/btnClockwise"
+        android:onClick="Animation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slide right"
+        android:id="@+id/btnSlideRight"
+        android:layout_below="@+id/btnFade"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignLeft="@+id/btnFade"
+        android:layout_alignStart="@+id/btnFade"
+        android:onClick="Animation"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLogo"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/textView2" />
+
+</RelativeLayout>

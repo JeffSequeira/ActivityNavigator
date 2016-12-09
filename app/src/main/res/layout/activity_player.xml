@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ragz.musicplayer.PlayerActivity">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBar"
+        android:onClick="doAction"
+        android:text="prv" />
+
+    <Button
+        android:id="@+id/btnFastBackward"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_toEndOf="@+id/btnPrevious"
+        android:layout_toRightOf="@+id/btnPrevious"
+        android:onClick="doAction"
+        android:text="bck" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBar"
+        android:onClick="doAction"
+        android:text="nxt" />
+
+    <Button
+        android:id="@+id/btnFastForward"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNext"
+        android:layout_alignBottom="@+id/btnNext"
+        android:layout_toLeftOf="@+id/btnNext"
+        android:layout_toStartOf="@+id/btnNext"
+        android:onClick="doAction"
+        android:text="fwd" />
+
+    <Button
+        android:id="@+id/btnPP"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFastForward"
+        android:layout_alignBottom="@+id/btnFastForward"
+        android:layout_centerHorizontal="true"
+        android:onClick="doAction"
+        android:text="||" />
+
+
+</RelativeLayout>

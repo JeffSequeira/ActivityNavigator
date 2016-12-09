@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jeff.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.jeff.myapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.barcodelibrary.permission.MAPS_RECEIVE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/eagle1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Greetings"
+            android:label="Greetings" />
+        <activity
+            android:name=".HelloBye"
+            android:label="hellobye" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="Calculator" />
+        <activity
+            android:name=".SortingBenchmarkActivity"
+            android:label="Sorting Benchmark" />
+        <activity
+            android:name=".ToastActivity"
+            android:label="Toast Activity" />
+        <activity
+            android:name=".WebViewActivity"
+            android:label="Web View" />
+        <activity
+            android:name=".VibratorActivity"
+            android:label="Vibrator" />
+        <!-- <activity android:name=".SmsActivity" android:label="SMS APP" /> -->
+        <activity
+            android:name=".ActivityLifecycle"
+            android:label="Activity Lifecycle" />
+        <activity
+            android:name=".ActivityNavigator"
+            android:label="Activity Navigator"></activity>
+        <activity
+            android:name=".AnimationActivity"
+            android:label="Animation" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageActivity"
+            android:label="Activity Navigator">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="Notification" />
+        <activity
+            android:name=".NotificationOutputActivity"
+            android:label="Notification Output">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BrowseImageActivity"
+            android:label="Browse Image" />
+        <activity android:name=".SoundActivity" />
+        <activity
+            android:name=".WifiToggleActivity"
+            android:label="Wifi Toggle" />
+        <activity
+            android:name=".VideoURLActivity"
+            android:label="Video URL" />
+        <activity android:name=".VideoRawActivity" />
+        <activity
+            android:name=".VideoActivity"
+            android:label="Video" />
+        <activity android:name=".A1" />
+        <activity android:name=".A2" />
+        <activity android:name=".CameraActivity" />
+        <activity
+            android:name=".InstagramActivity"
+            android:label="Instagram" />
+        <activity
+            android:name=".Registration_Activity"
+            android:label="Registration" />
+        <activity
+            android:name=".VideoMediaActivity"
+            android:label="Video" />
+        <activity
+            android:name=".AudioPlayer"
+            android:label="Music" />
+        <activity
+            android:name=".MusicListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".VideoPlayerActivity" />
+        <activity android:name=".VideoList" />
+        <activity android:name=".SensorListActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgmEogVVMB93Z1rZ8Pju-JXrVqbxQ9GHY" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".SuperheroActivity"
+            android:label="Superhero"></activity>
+        <activity
+            android:name=".SuperheroDetailsActivity"
+            android:label="Super Hero Details"></activity>
+        <activity android:name=".json_movie.MovielistActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
